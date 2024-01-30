@@ -22,7 +22,7 @@ Feedbacks are appreciated.
 
 ## Disclaimer
 
-* By using this application, you acknowledge and agree to the automated restart task.
+* By using this script, you acknowledge and agree to the automated restart task.
 
 * Scheduled Restarts: This automated script is executed at specific intervals to refresh the application. These restarts are performed seamlessly and with minimal (nearly zero) impact on your experience.
 
@@ -32,8 +32,7 @@ Feedbacks are appreciated.
 
 ## Legal Disclaimer
 
-By using this script, you acknowledge and agree to the automated restart task.\
-I shall not be held liable for any damages, losses, or legal action arising from the implementation of this automated restart task. \
+I shall not be held liable for any damages, losses, or legal action arising from the implementation of this automated restart script. \
 Users are advised to review and comply with the terms of service of this application.\
 In the event of any disagreement or potential legal action, users and I agree to resolve disputes through arbitration or other alternative dispute resolution mechanisms.\
 Thank you for your understanding.
