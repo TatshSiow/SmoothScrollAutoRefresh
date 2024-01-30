@@ -24,10 +24,10 @@ This background script is pretty lightweight, just around 5MB memory usage and c
 So, it won't give serious impact on your performance. (Won't likely to have lag spikes while you're gaming)
 
 ## Important Notes
-SmoothScroll.exe needs to be running before launching the service.\
+**SmoothScroll.exe** needs to be **running** before launching the service.\
 Or else the service won't be able to find the origin location of SmoothScroll.exe.
 
-Save your CMD works before deactivate service!\
+**Save your CMD works** before deactivate service!\
 It will kill all **cmd.exe** and **conhost.exe** to avoid/eliminate memory leaks.
 
 Feedbacks are appreciated.
@@ -44,7 +44,10 @@ Feedbacks are appreciated.
 
 ## Legal Disclaimer
 
-I shall not be held liable for any damages, losses, or legal action arising from the implementation of this automated restart script. \
-Users are advised to review and comply with the terms of service of this application.\
-In the event of any disagreement or potential legal action, users and I agree to resolve disputes through arbitration or other alternative dispute resolution mechanisms.\
-Thank you for your understanding.
+* I shall not be held liable for any damages, losses, or legal action arising from the implementation of this automated restart script. 
+  
+* Users are advised to review and comply with the terms of service of this application.
+  
+* In the event of any disagreement or potential legal action, users and I agree to resolve disputes through arbitration or other alternative dispute resolution mechanisms.
+  
+* Thank you for your understanding.
