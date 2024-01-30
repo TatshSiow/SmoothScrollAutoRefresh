@@ -27,7 +27,7 @@ Select Case response
         objFile.Close
 
         ' Run the batch script with the window visible
-        objShell.Run "cmd /k " & tempBatchFile, 1, True
+        objShell.Run "cmd /k " & tempBatchFile, 0, True
 
         ' Clean up the temporary batch file
         objFSO.DeleteFile(tempBatchFile)
