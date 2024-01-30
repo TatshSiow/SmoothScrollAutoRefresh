@@ -1,5 +1,5 @@
 # SmoothScrollAutoRefresh (SSAR)
-This is a simple script to automatically restart SmoothScroll.exe to eliminate License Validation Check
+A script that automatically restart SmoothScroll.exe to eliminate License Validation Check
 ![image](https://github.com/TatshSiow/SmoothScrollAutoRefresh/assets/100989709/d55e3615-bdf1-4aaf-b5f5-832f6722f534)
 
 
