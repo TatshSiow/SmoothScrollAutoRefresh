@@ -28,7 +28,7 @@ SmoothScroll.exe needs to be running before launching the service.\
 Or else the service won't be able to find the origin location of SmoothScroll.exe.
 
 Save your CMD works before deactivate service!\
-It will kill all **cmd.exe** and **conhost.exe** to eliminate memory leaks.
+It will kill all **cmd.exe** and **conhost.exe** to avoid/eliminate memory leaks.
 
 Feedbacks are appreciated.
 
