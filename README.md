@@ -7,6 +7,3 @@ This VBS script set a 1200 Seconds Timer when executed and will restart SmoothSc
 ### Yes: Run AutoRefresh Script
 ### No: Stop AutoRefresh Service
 ### Cancel : Exit the VBS
-
-## Important note for CMD users
-When you kill AutoRefresh Service, it will kill CMD.exe and openconsole.exe, make sure you are not using CMD while stopping the AutoRefresh Service!
