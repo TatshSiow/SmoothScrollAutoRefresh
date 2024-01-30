@@ -1,5 +1,8 @@
 Set objShell = CreateObject("WScript.Shell")
 
+' Find the location of SmoothScroll.exe
+smoothScrollPath = FindSmoothScrollPath()
+
 ' Display a dialog box with "Run," "Terminate," and "Exit" buttons
 response = MsgBox("Yes: Run AutoRefresh" & vbCrLf & "No: Kill Auto Refresh" & vbCrLf & "Cancel: Exit Service", vbYesNoCancel + vbQuestion + vbDefaultButton1, "SmoothScroll AutoRefresh")
 
@@ -12,8 +15,8 @@ Select Case response
             "taskkill /F /IM SmoothScroll.exe" & vbCrLf & _
             "timeout /t 1 /nobreak >nul" & vbCrLf & _
             "rem Start SmoothScroll.exe" & vbCrLf & _
-            "start """" ""C:\Users\User\AppData\Local\SmoothScroll\app-1.2.4.0\SmoothScroll.exe""" & vbCrLf & _
-            "timeout /t 1200 /nobreak >nul" & vbCrLf & _
+            "start """" """ & smoothScrollPath & """\SmoothScroll.exe""" & vbCrLf & _
+            "timeout /t 5 /nobreak >nul" & vbCrLf & _
             "goto LOOP"
 
         ' Save the batch script content to a temporary file
@@ -24,7 +27,7 @@ Select Case response
         objFile.Close
 
         ' Run the batch script with the window visible
-        objShell.Run "cmd /k " & tempBatchFile, 0, True
+        objShell.Run "cmd /k " & tempBatchFile, 1, True
 
         ' Clean up the temporary batch file
         objFSO.DeleteFile(tempBatchFile)
@@ -34,8 +37,27 @@ Select Case response
         objShell.Run "taskkill /F /IM openconsole.exe", 0, True
         objShell.Run "taskkill /F /IM cmd.exe", 0, True
 
-
     Case vbCancel ' Exit
         ' Do nothing or add any cleanup logic if needed
 
 End Select
+
+Function FindSmoothScrollPath()
+    ' Function to find the location of SmoothScroll.exe
+    Dim objWMIService, colProcesses, objProcess
+
+    ' Create WMI service object
+    Set objWMIService = GetObject("winmgmts:\\.\root\cimv2")
+
+    ' Query for SmoothScroll.exe process
+    Set colProcesses = objWMIService.ExecQuery("Select * from Win32_Process Where Name = 'SmoothScroll.exe'")
+
+    ' Check if SmoothScroll.exe process is running
+    For Each objProcess In colProcesses
+        FindSmoothScrollPath = Left(objProcess.ExecutablePath, InStrRev(objProcess.ExecutablePath, "\") - 1)
+        Exit Function
+    Next
+
+    ' Return an empty string if SmoothScroll.exe is not found
+    FindSmoothScrollPath = ""
+End Function
