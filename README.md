@@ -15,13 +15,20 @@ Cancel : Exit the VBS
 SmoothScroll.exe needs to be running before launching the service\
 Or else the service won't be able to find the origin location of SmoothScroll.exe
 
-Save your CMD works before deactivate!\
-It will kill all cmd.exe and conhost.exe to eliminate memory leaks
+Save your CMD works before deactivate service!\
+It will kill all **cmd.exe** and **conhost.exe** to eliminate memory leaks
 
-## Report BUGS
-Screenshot and open an issue, logs will be truely appreciated
+Feedbacks are appreciated.
 
 ## Disclaimer
-* I'm not responsible for breaking devices, thermonuclear war, or you getting fired because the your development failed.
-* YOU are choosing to use this automation script, and if you point the finger at me for messing up your device, I will laugh at you.
-* If the company take legal actions on you, that's your problem, not mine.
+
+* By using this application, you acknowledge and agree to the automated restart task.
+
+* Scheduled Restarts: This automated script is executed at specific intervals to refresh the application. These restarts are performed seamlessly and with minimal (nearly zero) impact on your experience.
+
+* User Impact: While I have taken measures to minimize any inconvenience, Users will lose Command Prompt and Console Host sessions when executing task deactivation. Save your work to avoid potential disruptions. 
+
+* I'M NOT RESPONSIBLE FOR YOUR DATA LOSS FOR NOT SAVING THE COMMAND PROMPT LINES.
+* I'M NOT RESPONSIBLE FOR LEGAL ACTIONS YOU MIGHT FACE BY THE ORIGIN COMPANY.
+
+* THIS IS A PROJECT ON STUDENT ACADEMIC RESEARCH
