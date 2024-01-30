@@ -14,3 +14,6 @@ Cancel : Exit the VBS
 ## Important Notes
 SmoothScroll.exe needs to be running before launching the service\
 Or else the service won't be able to find the origin location of SmoothScroll.exe
+
+## Report BUGS
+Screenshot and open an issue, logs will be truely appreciated
