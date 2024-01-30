@@ -4,7 +4,7 @@ A script that automatically restart SmoothScroll.exe to eliminate annoying Licen
 
 
 ## How does it work?
-Automatically restart SmoothScroll after 1200 Seconds, endlessly\
+Automatically restart SmoothScroll every 1200 Seconds, endlessly\
 ![image](https://github.com/TatshSiow/SmoothScrollAutoRefresh/assets/100989709/58cfd9f1-83b0-4ace-a6e7-3b64cf607ee4)
 
 Yes: Run AutoRefresh Service\
