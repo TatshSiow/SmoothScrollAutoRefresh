@@ -21,9 +21,7 @@ It will kill all cmd.exe and conhost.exe to eliminate memory leaks
 ## Report BUGS
 Screenshot and open an issue, logs will be truely appreciated
 
-## Please Support Original Product!
-
-[SmoothScroll Official Site](https://www.smoothscroll.net)
-
-This script is not for cracking SmoothScroll\
-Please Beware!
+## Disclaimer
+* I'm not responsible for breaking devices, thermonuclear war, or you getting fired because the your development failed.
+* YOU are choosing to use this automation script, and if you point the finger at me for messing up your device, I will laugh at you.
+* If the company take legal actions on you, that's your problem, not mine.
