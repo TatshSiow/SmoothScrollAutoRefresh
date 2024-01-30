@@ -23,8 +23,11 @@ Feedbacks are appreciated.
 ## Disclaimer
 
 * By using this application, you acknowledge and agree to the automated restart task.
+
 * Scheduled Restarts: This automated script is executed at specific intervals to refresh the application. These restarts are performed seamlessly and with minimal (nearly zero) impact on your experience.
-* User Impact: While I have taken measures to minimize any inconvenience, Users will lose Command Prompt and Console Host sessions when executing task deactivation. Save your work to avoid potential disruptions. 
+
+* User Impact: While I have taken measures to minimize any inconvenience, Users will lose Command Prompt and Console Host sessions when executing task deactivation. Save your work to avoid potential disruptions.
+
 * I'M NOT RESPONSIBLE FOR YOUR DATA LOSS FOR NOT SAVING THE COMMAND PROMPT LINES.
 
 ## Legal Disclaimer
