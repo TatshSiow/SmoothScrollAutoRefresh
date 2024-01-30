@@ -11,7 +11,7 @@ It won't prompt anything on each execution intervals, letting you focus on your 
 ## So so so, how to use this?
 ![image](https://github.com/TatshSiow/SmoothScrollAutoRefresh/assets/100989709/58cfd9f1-83b0-4ace-a6e7-3b64cf607ee4)
 
-After launching the **SSAR_X.vbs**, it will shows like what you see above.\
+After launching the **SSAR_(1.x).vbs**, it will shows like what you see above.\
 Yes: Run AutoRefresh Service (it will prompt "Service Activated")\
 No: Stop AutoRefresh Service (it will prompt "Service Deactivated")\
 Cancel : Exit the VBS (hmmm, to be more specific, just a do nothing button)
