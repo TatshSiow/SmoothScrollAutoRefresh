@@ -1,2 +1,5 @@
 # SmoothScrollAutoRefresh
-## This is a simple script for automatically refresh SmoothScroll App License Validation
+This is a simple script for automatically refresh SmoothScroll App License Validation
+
+## How does it work?
+
