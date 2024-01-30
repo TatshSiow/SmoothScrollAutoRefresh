@@ -16,7 +16,7 @@ Select Case response
             "timeout /t 1 /nobreak >nul" & vbCrLf & _
             "rem Start SmoothScroll.exe" & vbCrLf & _
             "start """" """ & smoothScrollPath & """\SmoothScroll.exe""" & vbCrLf & _
-            "timeout /t 1200 /nobreak >nul" & vbCrLf & _
+            "timeout /t 5 /nobreak >nul" & vbCrLf & _
             "goto LOOP"
 
         ' Save the batch script content to a temporary file
@@ -27,15 +27,14 @@ Select Case response
         objFile.Close
 
         ' Run the batch script with the window visible
-        objShell.Run "cmd /k " & tempBatchFile, 0, True
+        objShell.Run "cmd /k " & tempBatchFile, 1, True
 
         ' Clean up the temporary batch file
         objFSO.DeleteFile(tempBatchFile)
 
     Case vbNo ' Terminate
-        ' Terminate openconsole.exe and cmd.exe
-        objShell.Run "taskkill /F /IM openconsole.exe", 0, True
-        objShell.Run "taskkill /F /IM cmd.exe", 0, True
+        ' Terminate the running batch script
+        TerminateBatchScript()
 
     Case vbCancel ' Exit
         ' Do nothing or add any cleanup logic if needed
@@ -61,3 +60,19 @@ Function FindSmoothScrollPath()
     ' Return an empty string if SmoothScroll.exe is not found
     FindSmoothScrollPath = ""
 End Function
+
+Sub TerminateBatchScript()
+    ' Subroutine to terminate the running batch script
+    Dim objWMIService, colProcesses, objProcess
+
+    ' Create WMI service object
+    Set objWMIService = GetObject("winmgmts:\\.\root\cimv2")
+
+    ' Query for CMD.exe process associated with the batch script
+    Set colProcesses = objWMIService.ExecQuery("Select * from Win32_Process Where CommandLine Like '%TempBatchFile.bat%'")
+
+    ' Terminate the CMD.exe process associated with the batch script
+    For Each objProcess In colProcesses
+        objProcess.Terminate
+    Next
+End Sub
