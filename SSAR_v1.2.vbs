@@ -4,7 +4,7 @@ Set objShell = CreateObject("WScript.Shell")
 smoothScrollPath = FindSmoothScrollPath()
 
 ' Display a dialog box with "Run," "Terminate," and "Exit" buttons
-response = MsgBox("Yes: Run AutoRefresh" & vbCrLf & "No: Kill Auto Refresh" & vbCrLf & "Cancel: Exit Service", vbYesNoCancel + vbQuestion + vbDefaultButton1, "SmoothScroll AutoRefresh")
+response = MsgBox("SmoothScroll AutoRefresh Yes: Run AutoRefresh" & vbCrLf & "No: Stop AutoRefresh" & vbCrLf & "Cancel: Exit", vbYesNoCancel + vbQuestion + vbDefaultButton1, "SSAR v1.2")
 
 ' Choose an action based on the user's response
 Select Case response
