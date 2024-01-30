@@ -4,11 +4,13 @@ Set objShell = CreateObject("WScript.Shell")
 smoothScrollPath = FindSmoothScrollPath()
 
 ' Display a dialog box with "Run," "Terminate," and "Exit" buttons
-response = MsgBox("SmoothScroll AutoRefresh" & vbCrLf & "Yes: Run AutoRefresh" & vbCrLf & "No: Stop AutoRefresh" & vbCrLf & "Cancel: Exit", vbYesNoCancel + vbQuestion + vbDefaultButton1, "SSAR v1.2")
+response = MsgBox("Yes: Run AutoRefresh" & vbCrLf & "No: Kill Auto Refresh" & vbCrLf & "Cancel: Exit Service", vbYesNoCancel + vbQuestion + vbDefaultButton1, "SmoothScroll AutoRefresh")
 
 ' Choose an action based on the user's response
 Select Case response
     Case vbYes ' Run
+        ' Display a prompt indicating Service Activated
+        MsgBox "Service Activated", vbInformation, "SmoothScroll AutoRefresh"
         ' Batch script content
         batchScript = "@echo off" & vbCrLf & _
             ":LOOP" & vbCrLf & _
@@ -16,7 +18,7 @@ Select Case response
             "timeout /t 1 /nobreak >nul" & vbCrLf & _
             "rem Start SmoothScroll.exe" & vbCrLf & _
             "start """" """ & smoothScrollPath & """\SmoothScroll.exe""" & vbCrLf & _
-            "timeout /t 5 /nobreak >nul" & vbCrLf & _
+            "timeout /t 1200 /nobreak >nul" & vbCrLf & _
             "goto LOOP"
 
         ' Save the batch script content to a temporary file
@@ -32,9 +34,14 @@ Select Case response
         ' Clean up the temporary batch file
         objFSO.DeleteFile(tempBatchFile)
 
+
+
     Case vbNo ' Terminate
         ' Terminate the running batch script
-        TerminateBatchScript()
+        TerminateBatchScript
+
+        ' Display a prompt indicating Service Deactivated
+        MsgBox "Service Deactivated", vbInformation, "SmoothScroll AutoRefresh"
 
     Case vbCancel ' Exit
         ' Do nothing or add any cleanup logic if needed
