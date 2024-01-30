@@ -23,12 +23,14 @@ Feedbacks are appreciated.
 ## Disclaimer
 
 * By using this application, you acknowledge and agree to the automated restart task.
-
 * Scheduled Restarts: This automated script is executed at specific intervals to refresh the application. These restarts are performed seamlessly and with minimal (nearly zero) impact on your experience.
-
 * User Impact: While I have taken measures to minimize any inconvenience, Users will lose Command Prompt and Console Host sessions when executing task deactivation. Save your work to avoid potential disruptions. 
-
 * I'M NOT RESPONSIBLE FOR YOUR DATA LOSS FOR NOT SAVING THE COMMAND PROMPT LINES.
-* I'M NOT RESPONSIBLE FOR LEGAL ACTIONS YOU MIGHT FACE BY THE ORIGIN COMPANY.
 
-* THIS IS A PROJECT ON STUDENT ACADEMIC RESEARCH
+## Legal Disclaimer
+
+By using this script, you acknowledge and agree to the automated restart task.\
+I shall not be held liable for any damages, losses, or legal action arising from the implementation of this automated restart task. \
+Users are advised to review and comply with the terms of service of this application.\
+In the event of any disagreement or potential legal action, users and I agree to resolve disputes through arbitration or other alternative dispute resolution mechanisms.\
+Thank you for your understanding.
