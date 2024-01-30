@@ -16,7 +16,7 @@ Select Case response
             "timeout /t 1 /nobreak >nul" & vbCrLf & _
             "rem Start SmoothScroll.exe" & vbCrLf & _
             "start """" """ & smoothScrollPath & """\SmoothScroll.exe""" & vbCrLf & _
-            "timeout /t 5 /nobreak >nul" & vbCrLf & _
+            "timeout /t 1200 /nobreak >nul" & vbCrLf & _
             "goto LOOP"
 
         ' Save the batch script content to a temporary file
@@ -27,7 +27,7 @@ Select Case response
         objFile.Close
 
         ' Run the batch script with the window visible
-        objShell.Run "cmd /k " & tempBatchFile, 1, True
+        objShell.Run "cmd /k " & tempBatchFile, 0, True
 
         ' Clean up the temporary batch file
         objFSO.DeleteFile(tempBatchFile)
