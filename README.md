@@ -5,7 +5,8 @@ This is a simple script to automatically restart SmoothScroll App License Valida
 
 ## How does it work?
 This VBS script set a 1200 Seconds Timer when executed and will restart SmoothScroll Service repeatedly
-![image](https://github.com/TatshSiow/SmoothScrollAutoRefresh/assets/100989709/898975a0-e26f-4f48-9104-fc79bb657c81)
+![image](https://github.com/TatshSiow/SmoothScrollAutoRefresh/assets/100989709/58cfd9f1-83b0-4ace-a6e7-3b64cf607ee4)
+
 
 ### Yes: Run AutoRefresh Service
 ### No: Stop AutoRefresh Service
