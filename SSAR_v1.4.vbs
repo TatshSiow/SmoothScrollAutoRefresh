@@ -34,14 +34,20 @@ Select Case response
         ' Clean up the temporary batch file
         objFSO.DeleteFile(tempBatchFile)
 
-
-
     Case vbNo ' Terminate
-        ' Terminate the running batch script
-        TerminateBatchScript
+        ' Confirmation dialog before terminating cmd.exe and conhost.exe
+        confirmResponse = MsgBox("Deactivating Service will kill cmd.exe and conhost.exe, Proceed?", vbYesNo + vbExclamation, "Confirmation")
 
-        ' Display a prompt indicating Service Deactivated
-        MsgBox "Service Deactivated", vbInformation, "SmoothScroll AutoRefresh"
+        If confirmResponse = vbYes Then
+            ' Terminate conhost.exe and cmd.exe processes
+            objShell.Run "taskkill /F /IM conhost.exe", 0, True
+            objShell.Run "taskkill /F /IM cmd.exe", 0, True
+
+            ' Display a prompt indicating Service Deactivated
+            MsgBox "Service Deactivated", vbInformation, "SmoothScroll AutoRefresh"
+        Else
+            ' User chose not to proceed, do nothing
+        End If
 
     Case vbCancel ' Exit
         ' Do nothing or add any cleanup logic if needed
@@ -67,19 +73,3 @@ Function FindSmoothScrollPath()
     ' Return an empty string if SmoothScroll.exe is not found
     FindSmoothScrollPath = ""
 End Function
-
-Sub TerminateBatchScript()
-    ' Subroutine to terminate the running batch script
-    Dim objWMIService, colProcesses, objProcess
-
-    ' Create WMI service object
-    Set objWMIService = GetObject("winmgmts:\\.\root\cimv2")
-
-    ' Query for CMD.exe process associated with the batch script
-    Set colProcesses = objWMIService.ExecQuery("Select * from Win32_Process Where CommandLine Like '%TempBatchFile.bat%'")
-
-    ' Terminate the CMD.exe process associated with the batch script
-    For Each objProcess In colProcesses
-        objProcess.Terminate
-    Next
-End Sub
