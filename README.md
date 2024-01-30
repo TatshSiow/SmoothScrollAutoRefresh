@@ -1,5 +1,5 @@
 # SmoothScrollAutoRefresh (SSAR)
-This is a simple script for automatically refresh SmoothScroll App License Validation
+This is a simple script to automatically restart SmoothScroll App License Validation when prompted
 ![image](https://github.com/TatshSiow/SmoothScrollAutoRefresh/assets/100989709/d55e3615-bdf1-4aaf-b5f5-832f6722f534)
 
 
