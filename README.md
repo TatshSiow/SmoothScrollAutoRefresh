@@ -4,7 +4,7 @@ A script that automatically restart SmoothScroll.exe to eliminate License Valida
 
 
 ## How does it work?
-This VBS script set a 1200 Seconds timer when batch script is executed and will restart SmoothScroll when timer ends
+Automatically restart SmoothScroll after 1200 Seconds, endlessly
 ![image](https://github.com/TatshSiow/SmoothScrollAutoRefresh/assets/100989709/58cfd9f1-83b0-4ace-a6e7-3b64cf607ee4)
 
 
