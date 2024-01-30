@@ -1,22 +1,29 @@
 # SmoothScrollAutoRefresh (SSAR)
-A script that automatically restart SmoothScroll.exe to eliminate annoying License Validation Check Prompt\
+A script that automatically restart SmoothScroll.exe to eliminate annoying License Validation Check Prompt.\
 ![image](https://github.com/TatshSiow/SmoothScrollAutoRefresh/assets/100989709/d55e3615-bdf1-4aaf-b5f5-832f6722f534)
 
 
 ## How does it work?
-Automatically restart SmoothScroll every 1200 Seconds, endlessly\
+Automatically restart SmoothScroll every 1200 Seconds, endlessly.\
 ![image](https://github.com/TatshSiow/SmoothScrollAutoRefresh/assets/100989709/58cfd9f1-83b0-4ace-a6e7-3b64cf607ee4)
 
 Yes: Run AutoRefresh Service\
 No: Stop AutoRefresh Service\
 Cancel : Exit the VBS
 
+
+## About Memory Consumption
+![image](https://github.com/TatshSiow/SmoothScrollAutoRefresh/assets/100989709/cd668b7c-184b-400b-93ea-1f8d89e952c7)
+
+This background script is pretty lightweight, barely reached 5MB memory usage.\
+So, it won't give serious impact on your performance.
+
 ## Important Notes
-SmoothScroll.exe needs to be running before launching the service\
-Or else the service won't be able to find the origin location of SmoothScroll.exe
+SmoothScroll.exe needs to be running before launching the service.\
+Or else the service won't be able to find the origin location of SmoothScroll.exe.
 
 Save your CMD works before deactivate service!\
-It will kill all **cmd.exe** and **conhost.exe** to eliminate memory leaks
+It will kill all **cmd.exe** and **conhost.exe** to eliminate memory leaks.
 
 Feedbacks are appreciated.
 
