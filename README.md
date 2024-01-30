@@ -4,18 +4,23 @@ A script that silently auto-restart SmoothScroll.exe to eliminate annoying Licen
 
 
 ## How does it work?
-Automatically restart SmoothScroll every 1200 Seconds, endlessly.\
+This script will automatically restarts SmoothScroll every 1200 Seconds, endlessly and silently.\
+It won't prompt anything on each execution intervals, letting you focus on your foreground activities.
+
+
+## So so so, how to use this?
 ![image](https://github.com/TatshSiow/SmoothScrollAutoRefresh/assets/100989709/58cfd9f1-83b0-4ace-a6e7-3b64cf607ee4)
 
-Yes: Run AutoRefresh Service\
-No: Stop AutoRefresh Service\
-Cancel : Exit the VBS
+After launching the **SSAR_X.vbs**, it will shows like what you see above.\
+Yes: Run AutoRefresh Service (it will prompt "Service Activated")\
+No: Stop AutoRefresh Service (it will prompt "Service Deactivated")\
+Cancel : Exit the VBS (hmmm, to be more specific, just a do nothing button)
 
 
 ## About Memory Consumption
 ![image](https://github.com/TatshSiow/SmoothScrollAutoRefresh/assets/100989709/cd668b7c-184b-400b-93ea-1f8d89e952c7)
 
-This background script is pretty lightweight, barely reached 5MB memory usage.\
+This background script is pretty lightweight, just around 5MB memory usage.\
 So, it won't give serious impact on your performance.
 
 ## Important Notes
