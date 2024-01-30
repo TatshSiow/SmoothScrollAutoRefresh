@@ -12,7 +12,7 @@ Select Case response
             "taskkill /F /IM SmoothScroll.exe" & vbCrLf & _
             "timeout /t 1 /nobreak >nul" & vbCrLf & _
             "rem Start SmoothScroll.exe" & vbCrLf & _
-            "start """" ""C:\Users\Tatsh\AppData\Local\SmoothScroll\app-1.2.4.0\SmoothScroll.exe""" & vbCrLf & _
+            "start """" ""C:\Users\User\AppData\Local\SmoothScroll\app-1.2.4.0\SmoothScroll.exe""" & vbCrLf & _
             "timeout /t 1200 /nobreak >nul" & vbCrLf & _
             "goto LOOP"
 
