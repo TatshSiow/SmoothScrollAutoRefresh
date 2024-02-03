@@ -13,7 +13,7 @@ Select Case response
             "timeout /t 1 /nobreak >nul" & vbCrLf & _
             "rem Start SmoothScroll.exe" & vbCrLf & _
             "start """" """ & smoothScrollPath & """\SmoothScroll.exe""" & vbCrLf & _
-            "timeout /t 1200 /nobreak >nul" & vbCrLf & _
+            "timeout /t 600 /nobreak >nul" & vbCrLf & _
             "goto LOOP"
 
         tempBatchFile = objShell.ExpandEnvironmentStrings("%TEMP%\TempBatchFile.bat")
