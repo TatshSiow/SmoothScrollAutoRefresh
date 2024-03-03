@@ -4,7 +4,7 @@ A script that silently auto-restart SmoothScroll.exe to eliminate annoying Licen
 
 
 ## How does it work?
-This script will automatically restarts SmoothScroll every 1200 Seconds, endlessly and silently.\
+This script will automatically restarts SmoothScroll periodically, endlessly and silently.\
 It won't prompt anything on each execution intervals, letting you focus on your foreground activities.
 
 
