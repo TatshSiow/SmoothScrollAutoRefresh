@@ -16,13 +16,6 @@ Yes: Run AutoRefresh Service (it will prompt "Service Activated")\
 No: Stop AutoRefresh Service (it will prompt "Service Deactivated")\
 Cancel : Exit the VBS (hmmm, to be more specific, just a do nothing button)
 
-
-## About Memory Consumption
-![image](https://github.com/TatshSiow/SmoothScrollAutoRefresh/assets/100989709/cd668b7c-184b-400b-93ea-1f8d89e952c7)
-
-This background script is pretty lightweight, just around 5MB memory usage and consumes nearly 0% of your HorsePower!\
-So, it won't give serious impact on your performance. (Won't likely to have lag spikes while you're gaming)
-
 ## Important Notes
 **SmoothScroll.exe** needs to be **running** before launching the service.\
 Or else the service won't be able to find the origin location of SmoothScroll.exe.
