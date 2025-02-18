@@ -10,6 +10,7 @@ It won't prompt anything on each execution intervals, letting you focus on your 
 > [!CAUTION]
 > **Save your CMD works** before deactivate service!\
 > It will kill all **cmd.exe** and **conhost.exe** to avoid/eliminate memory leaks.
+> It won't affect your stuff as long as you don't deactivate the script.
 
 > [!IMPORTANT]
 > **SmoothScroll.exe** needs to be **running** before launching the service.\
